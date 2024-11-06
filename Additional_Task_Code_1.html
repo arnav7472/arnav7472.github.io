@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite TV Shows survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .name-group {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .name-group div {
+            flex: 1;
+        }
+        
+        .helper-text {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 2px;
+        }
+        
+        .radio-group {
+            margin: 10px 0;
+        }
+        
+        .radio-group label {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        .tv-shows-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .tv-shows-list input {
+            margin-bottom: 5px;
+        }
+        
+        .show-types {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .show-types label {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .register-button {
+            background-color: #E67E22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .register-button:hover {
+            background-color: #D35400;
+        }
+        
+        .terms {
+            margin: 20px 0;
+        }
+        
+        .terms a {
+            color: #666;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Favourite TV Shows survey</h1>
+    <p>Help us to understand what TV shows are your favourite</p>
+    
+    <form>
+        <div class="name-group">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder="e.g. John">
+                <div class="helper-text">(max 30 characters a-z and A-Z)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="e.g. Smith">
+                <div class="helper-text">(max 30 characters a-z and A-Z)</div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="e.g. student@vilniustech.lt">
+        </div>
+        
+        <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" rows="4"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" placeholder="yyyy-mm-dd">
+        </div>
+        
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Favourite TV Shows list</label>
+            <div class="tv-shows-list">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Your Favourite TV show type</label>
+            <div class="show-types">
+                <label>
+                    <input type="checkbox" name="show-type" value="adventure"> Adventure
+                </label>
+                <label>
+                    <input type="checkbox" name="show-type" value="drama"> Drama
+                </label>
+                <label>
+                    <input type="checkbox" name="show-type" value="horror"> Horror
+                </label>
+                <label>
+                    <input type="checkbox" name="show-type" value="documentary"> Documentary
+                </label>
+                <label>
+                    <input type="checkbox" name="show-type" value="other"> Other
+                </label>
+            </div>
+        </div>
+        
+        <div class="terms">
+            <label>
+                <input type="checkbox" required>
+                Creating an account means you're okay with our <a href="#">Terms and Conditions</a> and our <a href="#">Privacy Policy</a>
+            </label>
+        </div>
+        
+        <button type="submit" class="register-button">Register</button>
+    </form>
+</body>
+</html>
