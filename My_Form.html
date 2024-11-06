@@ -1,0 +1,36 @@
+<form>
+    <p>Salutation:
+        <select id="salutation-id" name="salutation">
+            <option value="">None</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Prof.">Prof.</option>
+        </select>
+    </p>
+    
+    <p>First Name: <input id="first-name-id" type="text" maxlength="10" name="first-name" required/></p>
+    <p>Last Name: <input id="last-name-id" type="text" name="last-name" required/></p>
+    
+    <p>Gender:</p>
+    <label><input id="male" type="radio" name="gender" value="Male" required/> Male</label>
+    <label><input id="female" type="radio" name="gender" value="Female" required/> Female</label>
+    <label><input id="nonbinary" type="radio" name="gender" value="NonBinary" required/> Non-Binary</label>
+    <label><input id="other" type="radio" name="gender" value="Other" required/> Other</label>
+    
+    <p>Email: <input id="email-id" type="email" name="email" required/></p>
+    <p>Date of Birth: <input id="birthday-date-id" type="date" name="birthday"/></p>
+    
+    <p>Address:<br>
+        <textarea id="address-id" name="address" rows="4" cols="50"></textarea>
+    </p>
+    
+    <p>Hobbies:<br>
+        <textarea id="hobbies-id" name="hobbies" rows="4" cols="50" placeholder="Enter your hobbies..."></textarea>
+    </p>
+    
+    <p><input id="gdpr-id" type="checkbox" name="gdpr" required/> I agree with terms and conditions</p>
+    
+    <button id="button-id" type="submit" name="submit">Submit</button>
+</form>
